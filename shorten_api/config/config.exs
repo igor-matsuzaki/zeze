@@ -28,3 +28,14 @@ config :phoenix, :json_library, Jason
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env()}.exs"
+
+# Configure your database
+config :shorten_api, ShortenApi.Repo,
+  adapter: EctoMnesia.Adapter
+
+config :ecto_mnesia,
+  host: {:system, :atom, "MNESIA_HOST", Kernel.node()},
+  storage_type: {:system, :atom, "MNESIA_STORAGE_TYPE", :disc_copies}
+
+config :mnesia,
+  dir: 'priv/data/mnesia'
