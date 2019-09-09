@@ -18,3 +18,6 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Docs: https://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+
+## Postman API
+https://documenter.getpostman.com/view/6584824/SVmpY363?version=latest#037f5439-2c71-473a-a17c-29bc2baa6636
